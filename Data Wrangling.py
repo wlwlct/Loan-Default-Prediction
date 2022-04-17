@@ -1,5 +1,4 @@
 # load library
-from numpy import printoptions
 import pandas as pd
 
 '''
@@ -148,5 +147,5 @@ for col in float_dict_missing.index:
     else:
         accepted[col].fillna(accepted[col].mode()[0], inplace=True)
 
-accepted.to_csv('./cleaned dataset.csv')
+accepted.to_csv('./cleaned dataset V2.csv')
 print('success')
